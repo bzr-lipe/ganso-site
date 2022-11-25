@@ -1,19 +1,10 @@
-const faceATag = document.querySelector('.logos-face');
-const instaATag = document.querySelector('.logos-insta');
+const logo = document.querySelector('.logo-image-initial-page');
 
 
-faceATag.onmouseover= () => {
-    const logo = document.querySelector('.face-social').style.zIndex= "-1";
+logo.onmouseover= () => {
+    logo.src= "./images/logos/logo_lado.png";
 };
 
-faceATag.onmouseout= () => {
-    const logo = document.querySelector('.face-social').style.zIndex= "1";
-};
-
-instaATag.onmouseover= () => {
-    const logo = document.querySelector('.insta-social').style.zIndex= "-1";
-};
-
-instaATag.onmouseout= () => {
-    const logo = document.querySelector('.insta-social').style.zIndex= "1";
+logo.onmouseout= () => {
+    logo.src= "./images/logos/logo_branco_lado.png";
 };

@@ -18,6 +18,8 @@
     height: 100vh;
     width: 100%;
     animation: bgchanges 20s infinite ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .page1 header{
@@ -25,10 +27,13 @@
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0));;
     width: 100%;
     height: 130px;
-    padding: 10px 60px;
+    padding: 10px 120px;
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
+    padding-top: 30px;
+
+
 }
 
 .logo-initial-page{
@@ -37,6 +42,12 @@
 
 .logo-image-initial-page{
     width: 350px;
+    transition: 0.3s;
+    filter: brightness(0) invert(1);
+}
+
+.logo-image-initial-page:hover {
+    filter:none;
 }
 
 .page1 nav ul {
@@ -60,72 +71,68 @@
     color: var(--yellow);
 }
 
-.logos-face{
+.logos-social{
     display: flex;
     align-items: center;
+    font-size: 35px;
 }
 
-.logos-insta{
-    display: flex;
-    align-items: center;
-}
-
-.face-social{
-    z-index: 1;
-    width:40px;
-}
-
-.face-hover{  
-    position: absolute;
-    width:40px;
-}
-
-.insta-social{
-    z-index: 1;
-    width:40px;
-}
-
-.insta-hover{
-    position: absolute;
-    width:40px;
-}
 
 .main-content-page1{
-    background-color: blanchedalmond;
-    position: absolute;
+    background-color: bisque;
     width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: left;
+    padding : 0 120px;
+    
+}
+
+.page1-hero{
+    background-color: aqua;
+}
+
+.bottom-page1{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0));;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
     bottom: 0;
 }
 
+.testing{
+    font-size: 60px;
+    color: #FFFFFF;
+}
 
-.seta-baixo{
-    background-color: aqua;
-    height: 50px;
-    width: 50px;
-    margin: 10px auto;
+.testing:hover {
+    color: var(--yellow);
 }
 
 
 @keyframes bgchanges {
     0%
     {
-        background-image: url(../images/bg-images/img1.jpg);
+        background-image: url(../images/bg-images/img1.jpg), url(../images/bg-images/img2.jpg);
     }
     20%
     {
-        background-image: url(../images/bg-images/img2.jpg);
+        background-image: url(../images/bg-images/img2.jpg), url(../images/bg-images/img3.jpg);
     }
     40%
     {
-        background-image: url(../images/bg-images/img3.jpg);
+        background-image: url(../images/bg-images/img3.jpg), url(../images/bg-images/img4.jpg);
     }
     60%
     {
-        background-image: url(../images/bg-images/img4.jpg);
+        background-image: url(../images/bg-images/img4.jpg), url(../images/bg-images/img5.jpg);
     }
     80%
     {
-        background-image: url(../images/bg-images/img5.jpg);
+        background-image: url(../images/bg-images/img5.jpg), url(../images/bg-images/img6.jpg);
     }
     100%
     {
