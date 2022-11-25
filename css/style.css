@@ -4,6 +4,8 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 :root {
@@ -32,8 +34,10 @@
     justify-content: space-between;
     font-weight: 300;
     padding-top: 30px;
+}
 
-
+.logo-image-initial-mobile{
+    display: none;
 }
 
 .logo-initial-page{
@@ -50,24 +54,28 @@
     filter:none;
 }
 
-.page1 nav ul {
+.nav-mobile{
+    display: none;
+}
+
+.desktop-tablet {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.page1 nav ul li{
+.desktop-tablet li{
     font-size: 22px;
     list-style: none;
 }
 
-.page1 nav ul li a {
+.desktop-tablet li a {
     text-decoration: none;
     color: #FFFFFF;
     transition: 0.2s;
 }
 
-.page1 nav ul li a:hover {
+.desktop-tablet li a:hover {
     color: var(--yellow);
 }
 
@@ -79,18 +87,29 @@
 
 
 .main-content-page1{
-    background-color: bisque;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     justify-content: left;
     padding : 0 120px;
-    
 }
 
 .page1-hero{
-    background-color: aqua;
+    width: 40%;
+    color: #FFFFFF;
+    text-shadow: #000000 5px 5px 5px;
 }
+
+.page1-hero h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.page1-hero p{
+    font-size: 20px;
+}
+
+
 
 .bottom-page1{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0));;
@@ -138,4 +157,67 @@
     {
         background-image: url(../images/bg-images/img6.jpg);
     }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .page1 header{
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0));;
+        width: 100%;
+        height: 130px;
+        padding: 0 15px;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 300;
+        padding-top: 0px;
+        background-color: aqua;
+    }
+
+    .desktop-tablet{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: flex;
+    }
+   
+
+    .page1 nav ul {
+        display: none
+    }
+    
+    .page1 nav ul li{
+        font-size: 22px;
+        list-style: none;
+    }
+    
+    .page1 nav ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        transition: 0.2s;
+    }
+    
+    .page1 nav ul li a:hover {
+        color: var(--yellow);
+    }
+    
+    .logos-social{
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+    }
+
+    .logo-image-initial-mobile{
+        display: inline;
+        width: 150px;
+    }
+
+    .logo-image-initial-page{
+        display: none;
+    }
+
+
+
 }
