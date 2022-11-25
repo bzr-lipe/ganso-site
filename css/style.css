@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -21,16 +22,21 @@
 
 .page1 header{
     display: flex;
-    background-color: aqua;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0));;
     width: 100%;
     height: 130px;
     padding: 10px 60px;
     align-items: center;
     justify-content: space-between;
+    font-weight: 300;
 }
 
-.page1 header nav {
-    background-color: blueviolet;
+.logo-initial-page{
+    width: fit-content;
+}
+
+.logo-image-initial-page{
+    width: 350px;
 }
 
 .page1 nav ul {
@@ -42,38 +48,61 @@
 .page1 nav ul li{
     font-size: 22px;
     list-style: none;
-
 }
 
 .page1 nav ul li a {
     text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.2s;
 }
 
-.logos-social-medias{
+.page1 nav ul li a:hover {
+    color: var(--yellow);
+}
+
+.logos-face{
     display: flex;
     align-items: center;
 }
 
-.logo-social{
-    transition: 0.3s;
+.logos-insta{
+    display: flex;
+    align-items: center;
+}
+
+.face-social{
     z-index: 1;
-    width:50px;
+    width:40px;
 }
 
-.icon-hover{
+.face-hover{  
     position: absolute;
-    width:50px;
+    width:40px;
+}
+
+.insta-social{
+    z-index: 1;
+    width:40px;
+}
+
+.insta-hover{
+    position: absolute;
+    width:40px;
+}
+
+.main-content-page1{
+    background-color: blanchedalmond;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 
-
-.logo-initial-page{
-    background-color: blue;
-    width: fit-content;
-}
-
-.logo-image-initial-page{
-    width: 350px;
+.seta-baixo{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
 }
 
 

@@ -1,9 +1,19 @@
-const aTag = document.querySelector('.logos-social-medias');
-const logo = document.querySelector('logo-social');
+const faceATag = document.querySelector('.logos-face');
+const instaATag = document.querySelector('.logos-insta');
 
-function hoverIcon(){
 
-    
+faceATag.onmouseover= () => {
+    const logo = document.querySelector('.face-social').style.zIndex= "-1";
+};
 
-    section.style.background = bg;
-}
+faceATag.onmouseout= () => {
+    const logo = document.querySelector('.face-social').style.zIndex= "1";
+};
+
+instaATag.onmouseover= () => {
+    const logo = document.querySelector('.insta-social').style.zIndex= "-1";
+};
+
+instaATag.onmouseout= () => {
+    const logo = document.querySelector('.insta-social').style.zIndex= "1";
+};
