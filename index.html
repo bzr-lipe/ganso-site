@@ -17,41 +17,66 @@
         <section class="page1">
             <header>
                 <div class="page1-header-mobile">
-                    <div class="socials-mobile">
-                        <ul class="nav-mobile">
-                            <li>
-                                <div class="logo-mobile">
-                                    <a>
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="logo-mobile">
-                                    <a>
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="logo-mobile">
-                                    <a>
-                                        <i class="fa-brands fa-whatsapp"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="logo-header-mobile">
+                        <div class="socials-mobile">
+                            <ul class="nav-mobile">
+                                <li>
+                                    <div class="logo-mobile">
+                                        <a>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-mobile">
+                                        <a>
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="logo-mobile">
+                                        <a>
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-initial-page">
+                            <a href=""><img class="logo-image-initial-page" src="./images/logos/logo_lado.png"></a>
+                            <a href=""><img class="logo-image-initial-mobile"
+                                    src="./images/logos/nome_brancoeAzul.png"></a>
+                        </div>
                     </div>
-                    <div class="logo-initial-page">
-                        <a href=""><img class="logo-image-initial-page" src="./images/logos/logo_lado.png"></a>
-                        <a href=""><img class="logo-image-initial-mobile" src="./images/logos/nome_brancoeAzul.png"></a>
-                    </div>
+
                     <div id="header">
                         <nav id="nav">
-                            <button id="btn-mobile">Menu</button>
+                            <div class="botaoHamburger">
+                                <input type="checkbox" id="checkbox-menu">
+                                <label for="checkbox-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                            </div>
                             <ul id="menu">
                                 <li><a href="/">Atrações</a></li>
-                                <li><a href="/">Hospedagem</a></li>
+                                <li id="hospedagem-option">
+                                    <a href="/">Hospedagem</a>
+                                    <input type="checkbox" id="checkbox-hospedagem">
+                                    <label for="checkbox-hospedagem" id="caret-hospedagem">
+                                        <i class="fa-solid fa-caret-down" id="caret"></i>
+                                    </label>
+                                </li>
+                                
+                                <div id="menu-hospedagem">
+                                    <ul id="lista-hospedagem">
+                                        <li><a href="/">Villa das Estrelas</a></li>
+                                        <li><a href="/">Villa da Mata</a></li>
+                                        <li id="vilaSol"><a href="/" >Villa do Sol</a></li>
+                                    </ul>
+                                </div>
                                 <li><a href="/">Restaurante</a></li>
                                 <li><a href="/">Excursões</a></li>
                                 <li><a href="/">Contato</a></li>
