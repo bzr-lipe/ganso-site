@@ -451,7 +451,6 @@
     }
 
     #VillaDasEstrelas{
-        background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -520,15 +519,44 @@
         margin: 0px;
     }
 
-    #fotos-vEstrela {
-        margin-top: 10px;
-        padding: 0;
+    .button {
+        background-color: var(--yellow);
+        width: 150px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .button a{
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #page2{
+        background-color: #FFFFFF;
+    }
+
+    .foot-estrelas {
+        margin-top: 25px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .seta-btn{
+        display: none;
+    }
+    
+    .seta-btn:hover{
+        display: inline;
     }
     
 
+
     .content-page2{
-        padding: 30px 14px;
         height: 350px;
+        padding: 30px 14px;
+
+        background-color: var(--blue);
     }
 
     .content-page2 p {
@@ -537,7 +565,6 @@
 
     .content-page2 div {
         margin-top: 10px;
-        background-color: #FBE740;
         width: 100%;
         display: flex;
         justify-content: center;
