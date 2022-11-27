@@ -10,6 +10,7 @@
 :root {
     --yellow: #FBE740;
     --blue: #21bbef;
+    --gray: #292B2F;
 }
 
 .page1 {
@@ -126,7 +127,6 @@
 
 .bottom-page1 {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-    ;
     width: 100%;
     height: 100px;
     display: flex;
@@ -175,7 +175,6 @@
 #page2{
         background-color: #21bbef;
         width: 100%;
-        height: 1233px;
 }
 
 
@@ -189,19 +188,12 @@
     }
 
     .page1 {
-        height: 60vh;
+        height: 500px;
     }
 
     .page1 header {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-        ;
-        width: 100%;
-        height: 130px;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
-        font-weight: 300;
-
     }
 
     .page1-header-mobile {
@@ -210,11 +202,6 @@
 
     .desktop-tablet {
         display: none;
-    }
-
-
-    .logo-initial-page {
-        width: fit-content;
     }
 
     .logo-header-mobile {
@@ -238,7 +225,6 @@
         width: fit-content;
         gap: 5px;
         list-style: none;
-
     }
 
     #header {
@@ -418,7 +404,6 @@
     }
 
     .main-content-page1 {
-        width: 100%;
         height: 50vh;
         padding: 0;
     }
@@ -437,18 +422,88 @@
 
     .page1-hero p{
         display: none;
-        font-size: 17px;
     }
 
     .bottom-page1{
         display: none;
     }
 
+    
+
+    #page2{
+
+    }
+
+    .content-page2{
+        padding: 30px 14px;
+        height: 350px;
+    }
+
+    .content-page2 p {
+        margin-top: 15px;
+    }
+
+    .content-page2 div {
+        margin-top: 10px;
+        background-color: #FBE740;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     #suites{
+        margin: 50px auto 10px;
         border-radius: 100px;
         padding: 10px 50px;
     }
-
-
     
+    footer{
+        background-color: var(--gray);
+        padding: 15px 14px;
+        
+    }
+
+    footer img {
+        width: 45%;
+    }
+
+    #footer-elements{
+        font-size: 12px;
+        list-style: none;
+    }
+
+    #footer-elements li{
+        margin-top: 7px;
+    }
+
+    #footer-elements li a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    footer .socials-mobile ul{
+        height: 50px;
+        width: 100%;
+        padding: 10px 100px;
+        margin: 20px 0 10px;
+    }
+
+    footer .nav-mobile {
+        justify-content: space-evenly;
+    }
+
+    footer .logo-mobile {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+        border: 1px solid #FFFFFF;
+
+    }    
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
 }
