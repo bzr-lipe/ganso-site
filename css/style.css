@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
-    overflow: hidden;
 }
 
 :root {
@@ -173,6 +172,14 @@
     }
 }
 
+#page2{
+        background-color: #21bbef;
+        width: 100%;
+        height: 1233px;
+}
+
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -181,6 +188,9 @@
         display: inline;
     }
 
+    .page1 {
+        height: 60vh;
+    }
 
     .page1 header {
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
@@ -191,7 +201,7 @@
         display: flex;
         justify-content: space-between;
         font-weight: 300;
-        padding-top: 7px;
+
     }
 
     .page1-header-mobile {
@@ -227,6 +237,8 @@
         padding: 0 23px;
         width: fit-content;
         gap: 5px;
+        list-style: none;
+
     }
 
     #header {
@@ -405,8 +417,38 @@
         transition: 0.3s;
     }
 
+    .main-content-page1 {
+        width: 100%;
+        height: 50vh;
+        padding: 0;
+    }
+
+    .page1-hero{
+        width: 80%;
+        text-shadow: #000000 1px 1px 10px;
+    }
+
+    .page1-hero h1{
+        width: 80%;
+        margin-left: 14px;
+        margin-top: 45px;
+        font-size: 35px;
+    } 
+
+    .page1-hero p{
+        display: none;
+        font-size: 17px;
+    }
+
+    .bottom-page1{
+        display: none;
+    }
+
+    #suites{
+        border-radius: 100px;
+        padding: 10px 50px;
+    }
 
 
-
-
+    
 }
