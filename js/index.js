@@ -44,17 +44,21 @@ bntHospedagem.addEventListener('touchstart', toggleHospedagens);
 
 
 const btnVillaEstrelas = document.getElementById('vEstrelas-PC');
-const parteBaixoBtn = document.getElementById('baixo-estrelas');
 const options = document.getElementById('optionsDesktop');
+const villaEstrelasDiv = document.getElementById('VillaDasEstrelas-PC');
+const cimaEstrelas = document.getElementById('estrelas-cimaBotao');
 
 function MostrarSuite (){
   if(btnVillaEstrelas.checked){
     console.log('ok');
-    parteBaixoBtn.classList.add('selected');
+    villaEstrelasDiv.classList.add('villaShow');
+    cimaEstrelas.classList.add('btnSelected');
+    document.getElementById('fotoEstrelas').src="images/logos/SELOS GANSO_VILA DAS ESTRELAS.png";
   }else{
-    parteBaixoBtn.classList.remove('selected');
+    document.getElementById('fotoEstrelas').src="images/logos/VILA DAS ESTRELAS_BRANCO.png";
+    cimaEstrelas.classList.remove('btnSelected');
+    villaEstrelasDiv.classList.remove('villaShow');
   }
-  
 }
 
 options.onclick=MostrarSuite;

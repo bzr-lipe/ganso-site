@@ -205,8 +205,27 @@
 
 #VillaDasEstrelas-PC {
     background-color: var(--blue);
-    padding: 50px 200px;
+    padding: 100px 200px;
     border-radius: 200px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.villaShow{
+    position: relative !important;
+    visibility: visible !important;
+}
+
+.vSol-Desktop .btnSuitesCima,.vSol-Desktop .btnSuites {
+    background-color: var(--orange);
+}
+
+.btnSelected{
+    background-color: white !important;
+}
+
+input{
+    opacity: 0;
 }
 
 #VillaDasEstrelas-PC img {
@@ -229,6 +248,8 @@
 
 #optionsDesktop{
     display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .btnSuitesCima{
@@ -264,18 +285,16 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    
+
 }
 
 #villa-benefits-pc .line1, .line2{
-    background-color: #0076A5;
     display: flex;
     gap: 0px;
     justify-content: left;
 }
 
 #villa-benefits-pc .line1 div, .line2 div {
-    background-color: #FBE740;
     text-align: center;
     height: 80px;
     width: 130px;
@@ -328,6 +347,13 @@
     
 }
 
+#btnEstrelas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #reserva-estrelas:hover{
     width: fit-content;
     padding-right: 55px;
@@ -368,9 +394,6 @@
     transition: 0.4s;
 }
 
-.selected{
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0))
-}
 
 #fotos-estrelas-pc{
     margin-top: 30px;
@@ -379,8 +402,43 @@
     justify-content: center;
 }
 
+#fotos-estrelas-pc div img{
+    border-radius: 20px;
+}
+
 #listMobile {
     display: none;
+}
+
+#lastpage-pc #page-localizacao{
+    background-color: #0076A5;
+    width: 50%;
+}
+
+#lastpage-pc{
+    width: 100%;
+    display: flex;
+}
+
+#lastpage-pc footer{
+    padding: 10px 30px;
+    width: 50%;
+    background-color: #f9b233;
+}
+
+
+#lastpage-pc footer img {
+    width: 40%;
+}
+
+#lastpage-pc #footer-elements {
+    padding-left:0px;
+    
+}
+
+#lastpage-pc #footer-elements li a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 
