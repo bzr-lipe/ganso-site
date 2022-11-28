@@ -39,3 +39,34 @@ function toggleHospedagens (event){
 
 bntHospedagem.addEventListener('click', toggleHospedagens);
 bntHospedagem.addEventListener('touchstart', toggleHospedagens);
+
+
+
+
+const btnVillaEstrelas = document.getElementById('vEstrelas-PC');
+const parteBaixoBtn = document.getElementById('baixo-estrelas');
+const options = document.getElementById('optionsDesktop');
+
+function MostrarSuite (){
+  if(btnVillaEstrelas.checked){
+    console.log('ok');
+    parteBaixoBtn.classList.add('selected');
+  }else{
+    parteBaixoBtn.classList.remove('selected');
+  }
+  
+}
+
+options.onclick=MostrarSuite;
+
+
+const btnVillaPC = document.getElementById('reserva-estrelas');
+const spanSeta = document.querySelector('.seta-btn');
+
+btnVillaPC.onmouseover= () => {
+  spanSeta.style.visibility="visible"
+}
+
+btnVillaPC.onmouseout= () => {
+  spanSeta.style.visibility="hidden"
+}

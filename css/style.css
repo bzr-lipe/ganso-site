@@ -10,11 +10,18 @@
 }
 
 :root {
-    --yellow: #FBE740;
-    --blue: #21bbef;
-    --dark-blue: #002D81;
+    --yellow: #FFCE44;
+    --orange: #f9b233;
+    --blue: #10bbef;
+    --dark-blue: #0076A5;
     --gray: #292B2F;
     --light-gray: #ECEEF1;
+    --green: #76B82A;
+
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
 }
 
 .page1 {
@@ -177,9 +184,205 @@
 }
 
 #page2{
-        background-color: #21bbef;
+        background-color: #FBE740;
         width: 100%;
 }
+
+.btnSuites {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 210px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#VillaDasEstrelas-mobile{
+    display: none;
+}
+
+#VillaDasEstrelas-PC {
+    background-color: var(--blue);
+    padding: 50px 200px;
+    border-radius: 200px;
+}
+
+#VillaDasEstrelas-PC img {
+    width: 30%;
+}
+
+#villaContent{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#villaContent p{
+    margin: 0 40px;
+    color: #FFFFFF;
+}
+
+
+
+#optionsDesktop{
+    display: flex;
+}
+
+.btnSuitesCima{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21bbef;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0));
+    border-radius: 10px 10px 0 0;
+
+    width: 150px;
+    height: 60px;
+}
+
+.btnSuitesCima img{
+    width: 100px;
+}
+
+.vEstrelas-Desktop, .vMata-Desktop, .vSol-Desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vMata-Desktop #btnCimaMata, #baixo-Mata{
+    background-color: var(--green);
+}
+
+
+
+
+#villa-benefits-pc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    
+}
+
+#villa-benefits-pc .line1, .line2{
+    background-color: #0076A5;
+    display: flex;
+    gap: 0px;
+    justify-content: left;
+}
+
+#villa-benefits-pc .line1 div, .line2 div {
+    background-color: #FBE740;
+    text-align: center;
+    height: 80px;
+    width: 130px;
+}
+
+#villa-benefits-pc .line1 div i, .line2 div i{
+    color: var(--orange);
+    font-size: 30px;
+}
+
+#villa-benefits-pc .line1 div p, .line2 div p{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    
+}
+
+#villa-benefits-pc .line2{
+    margin-top: 10px;
+}
+
+#reserva-estrelas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    font-weight: 500;
+    font-size: 30px;  
+    color: var(--text-color);
+    background-color: var(--orange);
+    box-shadow: 0px 0px 10px var(--orange);
+    border-radius: 30px; 
+    z-index: 0;  
+    overflow: hidden;  
+    height: 60px;
+    padding: 0 30px;
+    transition: 0.2s;
+}
+
+#reserva-estrelas a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#reserva-estrelas a span{
+    position: absolute;
+    visibility: hidden;
+    margin-left: 10px;    
+    
+}
+
+#reserva-estrelas:hover{
+    width: fit-content;
+    padding-right: 55px;
+    box-shadow: 0px 0px 20px #FFFFFF;
+
+}
+
+
+
+#reserva-estrelas::before {
+    content: '';
+    pointer-events: none;
+    opacity: .6;
+    background:
+      radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+      radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+      radial-gradient(circle at 80% 22%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+        
+      radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+    width: 100%;
+    height: 300%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: bubbles 5s linear infinite both;
+  }
+  
+  @keyframes bubbles {
+    from {
+      transform: translate();
+    }
+    to {
+      transform: translate(0, -66.666%);
+    }
+  }
+
+#baixo-estrelas{
+    transition: 0.4s;
+}
+
+.selected{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0))
+}
+
+#fotos-estrelas-pc{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#listMobile {
+    display: none;
+}
+
 
 
 
@@ -450,7 +653,7 @@
         justify-content: center;
     }
 
-    #VillaDasEstrelas{
+    #VillaDasEstrelas-mobile{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -462,7 +665,7 @@
         font-size: 15px;
     }
 
-    #VillaDasEstrelas img{
+    #VillaDasEstrelas-mobile img{
         
         width: 60%;
     }
@@ -568,6 +771,15 @@
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    #optionsDesktop{
+        display: none;
+    }
+
+    
+    #listMobile {
+        display: flex;
     }
 
     #suites{
