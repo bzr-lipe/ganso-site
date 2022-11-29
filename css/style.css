@@ -203,13 +203,18 @@
     display: none;
 }
 
-#VillaDasEstrelas-PC {
+#VillaDasEstrelas-PC, #VillaDaMata-PC {
     background-color: var(--blue);
     padding: 100px 200px;
     border-radius: 200px;
     position: absolute;
     visibility: hidden;
 }
+
+#VillaDaMata-PC {
+    background-color: var(--green);
+}
+
 
 .villaShow{
     position: relative !important;
@@ -225,21 +230,22 @@
 }
 
 input{
-    opacity: 0;
+    opacity: 100;
 }
 
-#VillaDasEstrelas-PC img {
+#VillaDasEstrelas-PC img, #VillaDaMata-PC img {
     width: 30%;
+    -webkit-filter: drop-shadow(0px 0px 3px #FFFFFF);
 }
 
-#villaContent{
+#villaContent, #mataContent{
     display: flex;
     align-items: center;
     
 }
 
 
-#villaContent p{
+#villaContent p, #mataContent p{
     margin: 0 40px;
     color: #FFFFFF;
 }
@@ -281,31 +287,31 @@ input{
 
 
 
-#villa-benefits-pc{
+#villa-benefits-pc, #mata-benefits-pc{
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 
 }
 
-#villa-benefits-pc .line1, .line2{
+#villa-benefits-pc .line1, .line2, #mata-benefits-pc .line1, .line2{
     display: flex;
     gap: 0px;
     justify-content: left;
 }
 
-#villa-benefits-pc .line1 div, .line2 div {
+#villa-benefits-pc .line1 div, .line2 div, #mata-benefits-pc .line1 div, .line2 div{
     text-align: center;
     height: 80px;
     width: 130px;
 }
 
-#villa-benefits-pc .line1 div i, .line2 div i{
+#villa-benefits-pc .line1 div i, .line2 div i, #mata-benefits-pc .line1 div i, .line2 div i{
     color: var(--orange);
     font-size: 30px;
 }
 
-#villa-benefits-pc .line1 div p, .line2 div p{
+#villa-benefits-pc .line1 div p, .line2 div p,#mata-benefits-pc .line1 div p, .line2 div p {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 600;
@@ -316,7 +322,7 @@ input{
     margin-top: 10px;
 }
 
-#reserva-estrelas{
+#reserva-estrelas, #reserva-mata{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,36 +340,35 @@ input{
     transition: 0.2s;
 }
 
-#reserva-estrelas a{
+#reserva-estrelas a, #reserva-mata a{
     font-size: 20px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-#reserva-estrelas a span{
+#reserva-estrelas a span, #reserva-mata a span{
     position: absolute;
     visibility: hidden;
     margin-left: 10px;    
     
 }
 
-#btnEstrelas {
+#btnEstrelas, #btnMata {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#reserva-estrelas:hover{
+#reserva-estrelas:hover, #reserva-mata:hover{
     width: fit-content;
     padding-right: 55px;
     box-shadow: 0px 0px 20px #FFFFFF;
-
 }
 
 
 
-#reserva-estrelas::before {
+#reserva-estrelas::before, #reserva-mata::before {
     content: '';
     pointer-events: none;
     opacity: .6;
@@ -395,14 +400,16 @@ input{
 }
 
 
-#fotos-estrelas-pc{
+#fotos-estrelas-pc,
+#fotos-mata-pc{
     margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#fotos-estrelas-pc div img{
+#fotos-estrelas-pc div img,
+#fotos-mata-pc div img {
     border-radius: 20px;
 }
 
@@ -418,12 +425,14 @@ input{
 #lastpage-pc{
     width: 100%;
     display: flex;
+    height: 400px;
 }
 
 #lastpage-pc footer{
     padding: 10px 30px;
     width: 50%;
     background-color: #f9b233;
+   
 }
 
 
@@ -433,7 +442,7 @@ input{
 
 #lastpage-pc #footer-elements {
     padding-left:0px;
-    
+    background-color: #10bbef;
 }
 
 #lastpage-pc #footer-elements li a{
@@ -441,8 +450,19 @@ input{
     color: #FFFFFF;
 }
 
+#lastpage-pc  #copyright{
+    background-color: #10bbef;
+    margin-bottom: auto;
+}
 
+#lastpage-pc .copyright{
+    margin:0;
+}
 
+#lastpage-pc .mapa iframe{
+    width: 60%;
+    height: 250px;
+}
 
 
 

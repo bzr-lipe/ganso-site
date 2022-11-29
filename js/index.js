@@ -47,10 +47,14 @@ const btnVillaEstrelas = document.getElementById('vEstrelas-PC');
 const options = document.getElementById('optionsDesktop');
 const villaEstrelasDiv = document.getElementById('VillaDasEstrelas-PC');
 const cimaEstrelas = document.getElementById('estrelas-cimaBotao');
+const btnVillaMata = document.getElementById('vMata-PC');
+const villaMataDiv = document.getElementById('VillaDaMata-PC');
+const cimaMata = document.getElementById('btnCimaMata');
 
-function MostrarSuite (){
+
+
+options.onclick=()=> {
   if(btnVillaEstrelas.checked){
-    console.log('ok');
     villaEstrelasDiv.classList.add('villaShow');
     cimaEstrelas.classList.add('btnSelected');
     document.getElementById('fotoEstrelas').src="images/logos/SELOS GANSO_VILA DAS ESTRELAS.png";
@@ -59,9 +63,21 @@ function MostrarSuite (){
     cimaEstrelas.classList.remove('btnSelected');
     villaEstrelasDiv.classList.remove('villaShow');
   }
+
+  if(btnVillaMata.checked){
+    villaMataDiv.classList.add('villaShow');
+    cimaMata.classList.add('btnSelected');
+    document.getElementById('logoMata').src="images/logos/SELOS_MATA.png";
+  }else{
+    document.getElementById('logoMata').src="images/logos/SELOS GANSO_VILA DA MATA.png";
+    cimaMata.classList.remove('btnSelected');
+    villaMataDiv.classList.remove('villaShow');
 }
 
-options.onclick=MostrarSuite;
+  
+}
+
+
 
 
 const btnVillaPC = document.getElementById('reserva-estrelas');
