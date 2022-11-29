@@ -9,6 +9,8 @@
     scroll-behavior: smooth;    
 }
 
+
+
 :root {
     --yellow: #FFCE44;
     --orange: #f9b233;
@@ -184,8 +186,23 @@
 }
 
 #page2{
-        background-color: #FBE740;
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 31px 31px;
+    background-image: repeating-linear-gradient(45deg, rgba(250, 179, 47, 0.14) 0, rgba(250, 179, 47, 0.14) 3.1px, #ffffff 0, #ffffff 50%);
         width: 100%;
+}
+
+.content-page2{
+    padding: 30px 120px 0;
+}
+
+.content-page2 p {
+    margin-top: 15px;
+}
+
+.content-page2 h1 {
+    color: var(--orange);
 }
 
 .btnSuites {
@@ -204,12 +221,17 @@
 }
 
 #VillaDasEstrelas-PC, #VillaDaMata-PC {
+
     background-color: var(--blue);
     padding: 100px 200px;
     border-radius: 200px;
     position: absolute;
     visibility: hidden;
+    
 }
+
+
+
 
 #VillaDaMata-PC {
     background-color: var(--green);
@@ -227,11 +249,20 @@
 
 .btnSelected{
     background-color: white !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 input{
-    opacity: 100;
+    opacity: 0;
 }
+
+#VillaDasEstrelas-PC {
+    background-color: var(--blue);
+    opacity: 1;
+    background-image: radial-gradient(#2cccfc 1.6500000000000001px, #10bbef 1.6500000000000001px);
+    background-size: 33px 33px;
+}
+
 
 #VillaDasEstrelas-PC img, #VillaDaMata-PC img {
     width: 30%;
@@ -241,7 +272,6 @@ input{
 #villaContent, #mataContent{
     display: flex;
     align-items: center;
-    
 }
 
 
@@ -253,6 +283,7 @@ input{
 
 
 #optionsDesktop{
+    
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -294,24 +325,24 @@ input{
 
 }
 
-#villa-benefits-pc .line1, .line2, #mata-benefits-pc .line1, .line2{
+#villa-benefits-pc .line1,#villa-benefits-pc .line2, #mata-benefits-pc .line1,#mata-benefits-pc .line2{
     display: flex;
     gap: 0px;
     justify-content: left;
 }
 
-#villa-benefits-pc .line1 div, .line2 div, #mata-benefits-pc .line1 div, .line2 div{
+#villa-benefits-pc .line1 div,#villa-benefits-pc .line2 div, #mata-benefits-pc .line1 div,#mata-benefits-pc .line2 div{
     text-align: center;
     height: 80px;
     width: 130px;
 }
 
-#villa-benefits-pc .line1 div i, .line2 div i, #mata-benefits-pc .line1 div i, .line2 div i{
+#villa-benefits-pc .line1 div i,#villa-benefits-pc .line2 div i, #mata-benefits-pc .line1 div i,#mata-benefits-pc .line2 div i{
     color: var(--orange);
     font-size: 30px;
 }
 
-#villa-benefits-pc .line1 div p, .line2 div p,#mata-benefits-pc .line1 div p, .line2 div p {
+#villa-benefits-pc .line1 div p,#villa-benefits-pc .line2 div p,#mata-benefits-pc .line1 div p,#mata-benefits-pc .line2 div p {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 600;
@@ -346,11 +377,10 @@ input{
     color: #FFFFFF;
 }
 
-#reserva-estrelas a span, #reserva-mata a span{
+.seta-btn{
     position: absolute;
     visibility: hidden;
     margin-left: 10px;    
-    
 }
 
 #btnEstrelas, #btnMata {
@@ -418,21 +448,97 @@ input{
 }
 
 #lastpage-pc #page-localizacao{
-    background-color: #0076A5;
+    background-color: var(--blue);
     width: 50%;
+    padding: 25px 30px;
+}
+
+#lastpage-pc #page-localizacao .texto {
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#mapaeBotao{
+    display: flex;
+
+}
+
+#mapaeBotao #reserva-mata {
+    height: fit-content;
+    padding: 10px 25px;
+    margin-left: 25px;
+    margin-top: auto;
+    
+}
+
+#mapaeBotao #reserva-mata:hover{
+    padding: 15px 30px;
+
+}
+
+#mapaeBotao #reserva-mata a{
+    font-size: 15px;
+}
+
+#lastpage-pc #calcular {
+display: none;
+}
+
+#lastpage-pc footer .socials-mobile{
+    display: flex;
+    justify-content: center;
+}
+
+#lastpage-pc .nav-mobile {
+    padding: 0;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#lastpage-pc .logo-mobile {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    overflow: hidden;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+#lastpage-pc .logo-mobile:hover,
+#lastpage-pc .logo-mobile:visited {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    color: var(--blue);
+}
+
+#lastpage-pc .logo-mobile a {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+#lastpage-pc .logo-mobile a:hover {
+    color: var(--blue);
 }
 
 #lastpage-pc{
     width: 100%;
     display: flex;
-    height: 400px;
+    height: 450px;
 }
 
 #lastpage-pc footer{
     padding: 10px 30px;
     width: 50%;
-    background-color: #f9b233;
-   
+    background-color: var(--gray);
 }
 
 
@@ -441,27 +547,38 @@ input{
 }
 
 #lastpage-pc #footer-elements {
+    margin-top: 10px;
     padding-left:0px;
-    background-color: #10bbef;
 }
 
 #lastpage-pc #footer-elements li a{
+    font-size: 14px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
 #lastpage-pc  #copyright{
-    background-color: #10bbef;
-    margin-bottom: auto;
+    color: #FFFFFF;
+
 }
 
 #lastpage-pc .copyright{
     margin:0;
 }
 
+#lastpage-pc .mapa {
+    width: 70%;
+    margin-top: 20px;
+}
+
 #lastpage-pc .mapa iframe{
-    width: 60%;
+    
     height: 250px;
+}
+
+#copyright a {
+    color: #0076A5;
+    text-decoration: none;
 }
 
 
@@ -738,6 +855,10 @@ input{
         padding: 30px 14px;
     }
 
+    #VillaDaMata-PC{
+        display: none;
+    }
+
     .estrelas-text {
         margin-top: 30px;;
         font-size: 15px;
@@ -831,12 +952,10 @@ input{
         display: inline;
     }
     
-
-
     .content-page2{
         height: 350px;
         padding: 30px 14px;
-
+        
         background-color: var(--blue);
     }
 
@@ -866,10 +985,16 @@ input{
         padding: 10px 50px;
     }   
 
+    #lastpage-pc{
+        display: inline;
+    }
+
     
     #page-localizacao{
         padding: 30px 14px;
         background-color: var(--light-gray);
+        width: 100% !important;
+
     }
 
     .texto p {
@@ -902,10 +1027,27 @@ input{
         font-size: 20px;
     }
 
+    #lastpage-pc .mapa{
+        width: 100%;
+    }
+
     footer{
         background-color: var(--gray);
         padding: 15px 14px;
-        
+        width: 100%!important;
+    }
+
+    #mapaeBotao{
+        display: inline;
+    }
+
+    #mapaeBotao #reserva-mata{
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+    #mapaeBotao #reserva-mata a{
+        color: #FFFFFF;
     }
 
     footer img {

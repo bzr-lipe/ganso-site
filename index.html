@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganso Complexo de Lazer</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">      
+    <link rel="icon" href="images/logos/ganso_bar.png" type="image/icon type">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
@@ -67,7 +69,7 @@
                             <ul id="menu">
                                 <li><a href="/">Atrações</a></li>
                                 <li id="hospedagem-option">
-                                    <a href="/">Hospedagem</a>
+                                    <a href="#page2">Hospedagem</a>
                                     <input type="checkbox" id="checkbox-hospedagem">
                                     <label for="checkbox-hospedagem" id="caret-hospedagem">
                                         <i class="fa-solid fa-caret-down" id="caret"></i>
@@ -92,7 +94,7 @@
                 <nav>
                     <ul class="desktop-tablet">
                         <li><a href="">Atrações</a></li>
-                        <li><a href="">Hospedagem</a></li>
+                        <li><a href="#page2">Hospedagem</a></li>
                         <li><a href="">Excursões</a></li>
                         <li>
                             <a href="https://www.instagram.com/gansocomplexodelazer/" target="_blank"
@@ -144,7 +146,7 @@
                         <label for="vMata-PC" class="btnSuitesCima" id="btnCimaMata">
                             <img src="images/logos/SELOS GANSO_VILA DA MATA.png" id="logoMata">
                         </label>
-                        <label for="vMata-PC" class="btnSuites" id="baixo-Mata" >
+                        <label for="vMata-PC" class="btnSuites" id="baixo-Mata">
                             Villa da Mata
                         </label>
                     </div>
@@ -281,7 +283,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
             <div id="VillaDaMata-PC">
                 <div id="mataContent">
@@ -393,7 +395,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
 
             <div id="VillaDasEstrelas-mobile">
@@ -525,17 +527,19 @@
                     <p>Estamos na Rodovia BR 460, KM 10. O local é de fácil acesso à beira da rodovia que liga Lambari a
                         Cambuquira. Apenas 5km da cidade de Lambari-MG.</p>
                 </div>
-                <div class="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59211.39089771335!2d-45.3260535!3d-21.9456232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeda86d8dc34bad96!2sGanso%20Complexo%20de%20lazer!5e0!3m2!1spt-BR!2sbr!4v1669562461401!5m2!1spt-BR!2sbr"
-                        width="600" height="350" style="border:0; border-radius: 10px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="mapaeBotao">
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59211.39089771335!2d-45.3260535!3d-21.9456232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeda86d8dc34bad96!2sGanso%20Complexo%20de%20lazer!5e0!3m2!1spt-BR!2sbr!4v1669562461401!5m2!1spt-BR!2sbr"
+                            width="600" height="350" style="border:0; border-radius: 10px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <button id="reserva-mata">
+                        <a href="https://www.google.com/maps/dir//Ganso+Complexo+de+lazer+-+BR-460,+Lambari+-+MG,+37480-000/@-21.9456232,-45.3260535,13z/data=!4m19!1m9!3m8!1s0x0:0xeda86d8dc34bad96!2sGanso+Complexo+de+lazer!5m2!4m1!1i2!8m2!3d-21.9448814!4d-45.3083648!4m8!1m0!1m5!1m1!1s0x94cb189a75650fb5:0xeda86d8dc34bad96!2m2!1d-45.3083648!2d-21.9448814!3e3?hl=pt-BR"
+                            target="_blank">Calcule sua rota
+                        </a>
+                    </button>
                 </div>
-                <div id="calcular">
-                    <a href="https://www.google.com/maps/dir//Ganso+Complexo+de+lazer+-+BR-460,+Lambari+-+MG,+37480-000/@-21.9456232,-45.3260535,13z/data=!4m19!1m9!3m8!1s0x0:0xeda86d8dc34bad96!2sGanso+Complexo+de+lazer!5m2!4m1!1i2!8m2!3d-21.9448814!4d-45.3083648!4m8!1m0!1m5!1m1!1s0x94cb189a75650fb5:0xeda86d8dc34bad96!2m2!1d-45.3083648!2d-21.9448814!3e3?hl=pt-BR"
-                        target="_blank"><span>Calcule sua rota </span><i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                
             </section>
             <footer>
                 <img src="./images/logos/nome_brancoeAzul.png" alt="Logo Ganso Complexo de Lazer">
@@ -578,12 +582,12 @@
                     <p class="copyright">GANSO COMPLEXO DE LAZER &#169 Todos os Diretos Reservados.</p>
                     <p class="copyright"> Design by <a href="https://www.linkedin.com/in/lp-bzr/">Felipe</a></p>
                 </div>
-                
+
             </footer>
         </div>
-            
+
     </main>
-    
+
     <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/362467b89b.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->

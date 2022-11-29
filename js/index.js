@@ -74,7 +74,7 @@ options.onclick=()=> {
     villaMataDiv.classList.remove('villaShow');
 }
 
-  
+
 }
 
 
@@ -82,11 +82,19 @@ options.onclick=()=> {
 
 const btnVillaPC = document.getElementById('reserva-estrelas');
 const spanSeta = document.querySelector('.seta-btn');
+const btnMataPC = document.getElementById('reserva-mata');
 
-btnVillaPC.onmouseover= () => {
-  spanSeta.style.visibility="visible"
+function mostrarSeta () {
+  spanSeta.style.visibility="visible";
 }
 
-btnVillaPC.onmouseout= () => {
-  spanSeta.style.visibility="hidden"
+function esconderSeta(){
+  spanSeta.style.visibility="hidden";
 }
+
+btnVillaPC.onmouseover=mostrarSeta;
+btnVillaPC.onmouseout=esconderSeta;
+
+btnMataPC.onmouseover=mostrarSeta;
+btnMataPC.onmouseout=esconderSeta;
+
