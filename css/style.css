@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
-    list-style:none;
-    scroll-behavior: smooth;    
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
 
@@ -65,6 +65,10 @@
 
 .logo-image-initial-mobile {
     display: none;
+}
+
+.carousel-inner {
+    border-radius: 20px;
 }
 
 .logo-initial-page {
@@ -185,15 +189,15 @@
     }
 }
 
-#page2{
+#page2 {
     background-color: #ffffff;
     opacity: 1;
     background-size: 31px 31px;
     background-image: repeating-linear-gradient(45deg, rgba(250, 179, 47, 0.14) 0, rgba(250, 179, 47, 0.14) 3.1px, #ffffff 0, #ffffff 50%);
-        width: 100%;
+    width: 100%;
 }
 
-.content-page2{
+.content-page2 {
     padding: 30px 120px 0;
 }
 
@@ -216,43 +220,48 @@
     font-weight: 600;
 }
 
-#VillaDasEstrelas-mobile{
+#VillaDasEstrelas-mobile {
     display: none;
 }
 
-#VillaDasEstrelas-PC, #VillaDaMata-PC {
+#VillaDasEstrelas-PC,
+#VillaDaMata-PC {
 
     background-color: var(--blue);
     padding: 100px 200px;
     border-radius: 200px;
     position: absolute;
     visibility: hidden;
-    
+
 }
 
 
 
 
 #VillaDaMata-PC {
-    background-color: var(--green);
+    background-color: rgba(118,184,42,1);
+    opacity: 1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.18) 2px, rgba(118,184,42,1) 2px);
+    background-size: 40px 40px;
 }
 
 
-.villaShow{
+.villaShow {
     position: relative !important;
     visibility: visible !important;
 }
 
-.vSol-Desktop .btnSuitesCima,.vSol-Desktop .btnSuites {
+.vSol-Desktop .btnSuitesCima,
+.vSol-Desktop .btnSuites {
     background-color: var(--orange);
 }
 
-.btnSelected{
+.btnSelected {
     background-color: white !important;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-input{
+input {
     opacity: 0;
 }
 
@@ -264,133 +273,176 @@ input{
 }
 
 
-#VillaDasEstrelas-PC img, #VillaDaMata-PC img {
+#VillaDasEstrelas-PC img,
+#VillaDaMata-PC img {
     width: 30%;
-    -webkit-filter: drop-shadow(0px 0px 3px #FFFFFF);
 }
 
-#villaContent, #mataContent{
+#VillaDaMata-PC img{
+    -webkit-filter: drop-shadow(0px 0px 20px rgb(167, 255, 66));
+}
+
+#villaContent,
+#mataContent {
     display: flex;
     align-items: center;
 }
 
 
-#villaContent p, #mataContent p{
+#villaContent p,
+#mataContent p {
     margin: 0 40px;
     color: #FFFFFF;
 }
 
 
 
-#optionsDesktop{
-    
+#optionsDesktop {
+
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.btnSuitesCima{
+.btnSuitesCima {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #21bbef;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
     border-radius: 10px 10px 0 0;
 
     width: 150px;
     height: 60px;
 }
 
-.btnSuitesCima img{
+.btnSuitesCima img {
     width: 100px;
 }
 
-.vEstrelas-Desktop, .vMata-Desktop, .vSol-Desktop{
+.vEstrelas-Desktop,
+.vMata-Desktop,
+.vSol-Desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.vMata-Desktop #btnCimaMata, #baixo-Mata{
+.vMata-Desktop #btnCimaMata,
+#baixo-Mata {
     background-color: var(--green);
 }
 
 
 
 
-#villa-benefits-pc, #mata-benefits-pc{
+#villa-benefits-pc,
+#mata-benefits-pc {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 
 }
 
-#villa-benefits-pc .line1,#villa-benefits-pc .line2, #mata-benefits-pc .line1,#mata-benefits-pc .line2{
+#villa-benefits-pc .line1,
+#villa-benefits-pc .line2,
+#mata-benefits-pc .line1,
+#mata-benefits-pc .line2 {
     display: flex;
     gap: 0px;
     justify-content: left;
 }
 
-#villa-benefits-pc .line1 div,#villa-benefits-pc .line2 div, #mata-benefits-pc .line1 div,#mata-benefits-pc .line2 div{
+#villa-benefits-pc .line1 div,
+#villa-benefits-pc .line2 div,
+#mata-benefits-pc .line1 div,
+#mata-benefits-pc .line2 div {
     text-align: center;
     height: 80px;
     width: 130px;
 }
 
-#villa-benefits-pc .line1 div i,#villa-benefits-pc .line2 div i, #mata-benefits-pc .line1 div i,#mata-benefits-pc .line2 div i{
+#villa-benefits-pc .line1 div i,
+#villa-benefits-pc .line2 div i {
     color: var(--orange);
     font-size: 30px;
 }
 
-#villa-benefits-pc .line1 div p,#villa-benefits-pc .line2 div p,#mata-benefits-pc .line1 div p,#mata-benefits-pc .line2 div p {
+#mata-benefits-pc .line1 div i,
+#mata-benefits-pc .line2 div i {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px #9dff52;
+}
+
+#villa-benefits-pc .line1 div p,
+#villa-benefits-pc .line2 div p,
+#mata-benefits-pc .line1 div p,
+#mata-benefits-pc .line2 div p {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 600;
-    
+
 }
 
-#villa-benefits-pc .line2{
+#villa-benefits-pc .line2 {
     margin-top: 10px;
 }
 
-#reserva-estrelas, #reserva-mata{
+#reserva-estrelas,
+#reserva-mata {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
     font-weight: 500;
-    font-size: 30px;  
+    font-size: 30px;
     color: var(--text-color);
     background-color: var(--orange);
     box-shadow: 0px 0px 10px var(--orange);
-    border-radius: 30px; 
-    z-index: 0;  
-    overflow: hidden;  
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
     height: 60px;
     padding: 0 30px;
     transition: 0.2s;
+    
 }
 
-#reserva-estrelas a, #reserva-mata a{
+#reserva-mata{
+    background-color: rgba(77, 175, 56, 1);
+opacity: 1;
+background-image:  linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), linear-gradient(225deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%), linear-gradient(315deg, rgba(255, 255, 255, 0.04) 25%, rgba(77, 175, 56, 1) 25%);
+background-position:  11px 0, 11px 0, 0 0, 0 0;
+background-size: 22px 22px;
+background-repeat: repeat;
+box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+
+}
+
+#reserva-estrelas a,
+#reserva-mata a {
     font-size: 20px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.seta-btn{
+.seta-btn {
     position: absolute;
     visibility: hidden;
-    margin-left: 10px;    
+    margin-left: 10px;
 }
 
-#btnEstrelas, #btnMata {
+#btnEstrelas,
+#btnMata {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#reserva-estrelas:hover, #reserva-mata:hover{
+#reserva-estrelas:hover,
+#reserva-mata:hover {
     width: fit-content;
     padding-right: 55px;
     box-shadow: 0px 0px 20px #FFFFFF;
@@ -398,40 +450,42 @@ input{
 
 
 
-#reserva-estrelas::before, #reserva-mata::before {
+#reserva-estrelas::before,
+#reserva-mata::before {
     content: '';
     pointer-events: none;
     opacity: .6;
     background:
-      radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-      radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-      radial-gradient(circle at 80% 22%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-        
-      radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+        radial-gradient(circle at 20% 35%, transparent 0, transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+        radial-gradient(circle at 75% 44%, transparent 0, transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+        radial-gradient(circle at 80% 22%, transparent 0, transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+
+        radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
     width: 100%;
     height: 300%;
     top: 0;
     left: 0;
     position: absolute;
     animation: bubbles 5s linear infinite both;
-  }
-  
-  @keyframes bubbles {
-    from {
-      transform: translate();
-    }
-    to {
-      transform: translate(0, -66.666%);
-    }
-  }
+}
 
-#baixo-estrelas{
+@keyframes bubbles {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: translate(0, -66.666%);
+    }
+}
+
+#baixo-estrelas {
     transition: 0.4s;
 }
 
 
 #fotos-estrelas-pc,
-#fotos-mata-pc{
+#fotos-mata-pc {
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -447,44 +501,47 @@ input{
     display: none;
 }
 
-#lastpage-pc #page-localizacao{
-    background-color: var(--blue);
+#lastpage-pc #page-localizacao {
+    background-color: rgba(17,188,240,1);
+opacity: 1;
+background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.06) 50%, rgba(17,188,240,1) 50%);
+background-size: 32px 32px;
     width: 50%;
     padding: 25px 30px;
 }
 
 #lastpage-pc #page-localizacao .texto {
+    font-size: 15px;
     color: #FFFFFF;
     width: 100%;
 }
 
-#mapaeBotao{
+#mapaeBotao {
     display: flex;
-
+    align-items: flex-end;
 }
 
 #mapaeBotao #reserva-mata {
     height: fit-content;
     padding: 10px 25px;
-    margin-left: 25px;
-    margin-top: auto;
-    
+    width: 200px;
+    margin: 0 0 7px 25px 
 }
 
-#mapaeBotao #reserva-mata:hover{
-    padding: 15px 30px;
+#mapaeBotao #reserva-mata:hover {
+    padding: 12px 27px;
 
 }
 
-#mapaeBotao #reserva-mata a{
-    font-size: 15px;
+#mapaeBotao #reserva-mata a {
+    font-size: 12px;
 }
 
 #lastpage-pc #calcular {
-display: none;
+    display: none;
 }
 
-#lastpage-pc footer .socials-mobile{
+#lastpage-pc footer .socials-mobile {
     display: flex;
     justify-content: center;
 }
@@ -529,13 +586,13 @@ display: none;
     color: var(--blue);
 }
 
-#lastpage-pc{
+#lastpage-pc {
     width: 100%;
     display: flex;
     height: 450px;
 }
 
-#lastpage-pc footer{
+#lastpage-pc footer {
     padding: 10px 30px;
     width: 50%;
     background-color: var(--gray);
@@ -548,22 +605,22 @@ display: none;
 
 #lastpage-pc #footer-elements {
     margin-top: 10px;
-    padding-left:0px;
+    padding-left: 0px;
 }
 
-#lastpage-pc #footer-elements li a{
+#lastpage-pc #footer-elements li a {
     font-size: 14px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-#lastpage-pc  #copyright{
+#lastpage-pc #copyright {
     color: #FFFFFF;
 
 }
 
-#lastpage-pc .copyright{
-    margin:0;
+#lastpage-pc .copyright {
+    margin: 0;
 }
 
 #lastpage-pc .mapa {
@@ -571,8 +628,8 @@ display: none;
     margin-top: 20px;
 }
 
-#lastpage-pc .mapa iframe{
-    
+#lastpage-pc .mapa iframe {
+
     height: 250px;
 }
 
@@ -594,7 +651,8 @@ display: none;
     }
 
     .page1 header {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        ;
         padding: 0;
     }
 
@@ -648,7 +706,7 @@ display: none;
         overflow: hidden;
         color: #FFFFFF;
         transition: 0.3s;
-        
+
     }
 
     .logo-mobile:hover,
@@ -711,8 +769,8 @@ display: none;
         display: flex;
     }
 
-    .botaoHamburger{
-        position:absolute;
+    .botaoHamburger {
+        position: absolute;
         top: 50px;
         right: 14px;
     }
@@ -721,7 +779,7 @@ display: none;
         position: absolute;
         opacity: 0;
     }
-    
+
     label {
         cursor: pointer;
         position: relative;
@@ -729,7 +787,7 @@ display: none;
         height: 26px;
         width: 30px;
     }
-    
+
     label span {
         position: absolute;
         display: block;
@@ -738,17 +796,17 @@ display: none;
         border-radius: 30px;
         background: #FFFFFF;
         transition: 0.25s ease-in-out;
-    
+
     }
-    
+
     label span:nth-child(1) {
         top: 0;
     }
-    
+
     label span:nth-child(2) {
         top: 11px;
     }
-    
+
     label span:nth-child(3) {
         top: 22px;
     }
@@ -757,48 +815,48 @@ display: none;
         width: 100%;
         height: 100vh;
         background-color: #0d0d0d;
-    
+
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
         top: 11px;
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(2) {
         display: none;
     }
-    
+
     #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(45deg);
         top: 11px;
     }
 
-    #menu-hospedagem{
+    #menu-hospedagem {
         width: 80%;
         display: none;
         transition: 0.5s;
     }
 
-    #lista-hospedagem li{
+    #lista-hospedagem li {
         margin: 0 auto;
         padding: 10px 20px;
         width: 70%;
         transition: 0.5s;
     }
-    
-    #lista-hospedagem li a{
+
+    #lista-hospedagem li a {
         font-size: 15px;
     }
 
 
-    #checkbox-hospedagem{
+    #checkbox-hospedagem {
         position: absolute;
         opacity: 0;
 
     }
 
-    #caret-hospedagem{
+    #caret-hospedagem {
         transition: 0.2s;
         display: flex;
         align-items: center;
@@ -809,7 +867,7 @@ display: none;
         right: 100px;
     }
 
-    #caret{
+    #caret {
         transition: 0.3s;
     }
 
@@ -818,29 +876,30 @@ display: none;
         padding: 0;
     }
 
-    .page1-hero{
+    .page1-hero {
         width: 80%;
         text-shadow: #000000 1px 1px 10px;
     }
 
-    .page1-hero h1{
+    .page1-hero h1 {
         width: 80%;
         margin-left: 14px;
         margin-top: 45px;
         font-size: 35px;
-    } 
+    }
 
-    .page1-hero p{
+    .page1-hero p {
         display: none;
     }
 
-    .bottom-page1{
+    .bottom-page1 {
         display: none;
     }
 
-    
 
-    #benefits1, #benefits2{
+
+    #benefits1,
+    #benefits2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -848,24 +907,25 @@ display: none;
         justify-content: center;
     }
 
-    #VillaDasEstrelas-mobile{
+    #VillaDasEstrelas-mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 30px 14px;
     }
 
-    #VillaDaMata-PC{
+    #VillaDaMata-PC {
         display: none;
     }
 
     .estrelas-text {
-        margin-top: 30px;;
+        margin-top: 30px;
+        ;
         font-size: 15px;
     }
 
-    #VillaDasEstrelas-mobile img{
-        
+    #VillaDasEstrelas-mobile img {
+
         width: 60%;
     }
 
@@ -876,7 +936,7 @@ display: none;
         gap: 10px;
     }
 
-    .line2{
+    .line2 {
         margin-top: 10px;
         display: flex;
         width: 90%;
@@ -884,33 +944,33 @@ display: none;
     }
 
 
-    .benefit{
+    .benefit {
         height: 80px;
         width: 120px;
         text-align: center;
     }
-    
 
-    .benefit i{
+
+    .benefit i {
         font-size: 35px;
         color: var(--blue);
     }
 
-    .benefit p{
+    .benefit p {
         font-size: 12px;
     }
 
-    
+
     .carousel-control-next,
     .carousel-control-prev {
-     margin: -20px;
+        margin: -20px;
 
     }
 
     .texto-estrela .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2321bbef'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
     }
-   
+
     .texto-estrela .carousel-control-next-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2321bbef'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
     }
@@ -922,19 +982,35 @@ display: none;
     }
 
     .button {
-        background-color: var(--yellow);
+        background-color: var(--blue);
         width: 150px;
         padding: 10px 20px;
         border-radius: 20px;
     }
 
-    .button a{
+    .button a {
         text-decoration: none;
         color: #000000;
     }
+    
+    #reserva-mata{
+        background-color: rgba(0,118,165,1);
+opacity: 1;
+background-image:  linear-gradient(135deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%), linear-gradient(225deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0.06) 25%, transparent 25%), linear-gradient(315deg, rgba(255, 255, 255, 0.06) 25%, rgba(0,118,165,1) 25%);
+background-position:  11px 0, 11px 0, 0 0, 0 0;
+background-size: 22px 22px;
+background-repeat: repeat;
+    }
 
-    #page2{
-        background-color: #FFFFFF;
+    #reserva-mata a{
+        font-size: 15px;
+    }
+
+    #page2 {
+        background-color: #ffffff;
+        opacity: 1;
+        background-size: 24px 24px;
+        background-image: repeating-linear-gradient(45deg, rgba(17, 188, 240, 0.06) 0, rgba(17, 188, 240, 0.06) 2.4000000000000004px, #ffffff 0, #ffffff 50%);
     }
 
     .foot-estrelas {
@@ -944,23 +1020,32 @@ display: none;
         width: 100%;
     }
 
-    .seta-btn{
+    .seta-btn {
         display: none;
     }
-    
-    .seta-btn:hover{
+
+    .seta-btn:hover {
         display: inline;
     }
-    
-    .content-page2{
+
+    .content-page2 {
         height: 350px;
         padding: 30px 14px;
-        
-        background-color: var(--blue);
+        background-color: rgba(17, 188, 240, 1);
+        opacity: 1;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.6px, rgba(17, 188, 240, 1) 1.6px);
+        background-size: 32px 32px;
     }
 
     .content-page2 p {
         margin-top: 15px;
+        color: white;
+    }
+
+    .content-page2 h1{
+        color: #FFFFFF;
+        font-size: 40px;
+        text-shadow: 0px 0px 4px #FFFFFF;
     }
 
     .content-page2 div {
@@ -970,28 +1055,28 @@ display: none;
         justify-content: center;
     }
 
-    #optionsDesktop{
+    #optionsDesktop {
         display: none;
     }
 
-    
+
     #listMobile {
         display: flex;
     }
 
-    #suites{
-        margin: 50px auto 10px;
+    #suites {
+        margin: 20px auto 10px;
         border-radius: 100px;
         padding: 10px 50px;
-    }   
+    }
 
-    #lastpage-pc{
+    #lastpage-pc {
         display: inline;
     }
 
-    
-    #page-localizacao{
-        padding: 30px 14px;
+
+    #page-localizacao {
+        padding: 30px 14px ;
         background-color: var(--light-gray);
         width: 100% !important;
 
@@ -1002,13 +1087,13 @@ display: none;
     }
 
     .texto h1 {
-        color:var(--dark-blue);
+        color: var(--dark-blue);
     }
-    
-    .mapa{
+
+    .mapa {
         display: flex;
         align-items: center;
-        
+
     }
 
     #calcular {
@@ -1018,35 +1103,35 @@ display: none;
         justify-content: flex-end;
     }
 
-    #page-localizacao a {        
+    #page-localizacao a {
         color: var(--dark-blue);
         text-decoration: none;
     }
 
-    #page-localizacao a span{
+    #page-localizacao a span {
         font-size: 20px;
     }
 
-    #lastpage-pc .mapa{
+    #lastpage-pc .mapa {
         width: 100%;
     }
 
-    footer{
+    footer {
         background-color: var(--gray);
         padding: 15px 14px;
-        width: 100%!important;
+        width: 100% !important;
     }
 
-    #mapaeBotao{
+    #mapaeBotao {
         display: inline;
     }
 
-    #mapaeBotao #reserva-mata{
+    #mapaeBotao #reserva-mata {
         margin-left: auto;
         margin-top: 20px;
     }
 
-    #mapaeBotao #reserva-mata a{
+    #mapaeBotao #reserva-mata a {
         color: #FFFFFF;
     }
 
@@ -1054,21 +1139,21 @@ display: none;
         width: 45%;
     }
 
-    #footer-elements{
+    #footer-elements {
         font-size: 12px;
         list-style: none;
     }
 
-    #footer-elements li{
+    #footer-elements li {
         margin-top: 7px;
     }
 
-    #footer-elements li a{
+    #footer-elements li a {
         text-decoration: none;
         color: #FFFFFF;
     }
 
-    footer .socials-mobile ul{
+    footer .socials-mobile ul {
         height: 50px;
         width: 100%;
         padding: 10px 100px;
@@ -1085,7 +1170,7 @@ display: none;
         width: 40px;
         font-size: 20px;
         border: 1px solid #FFFFFF;
-    }    
+    }
 
     .copyright {
         text-align: center;
